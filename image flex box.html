@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Image Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:black;
+        }
+        .content {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            margin: 20px 0 10px;
+            font-size: 1.8rem;
+            text-align: left;
+            padding-left: 10px;
+            border-left: 4px solid #007BFF;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .gallery img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.4s, box-shadow 0.4s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Lightbox */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .modal img {
+            max-width: 80%;
+            max-height: 80%;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5);
+        }
+
+        .modal:target {
+            display: flex;
+        }
+
+        /* Close Button */
+        .modal a {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 2rem;
+            color: white;
+            text-decoration: none;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 5px 10px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1 style="color:white">Bike</h1>
+        <div class="gallery">
+            <a href="Bike1.jpeg"><img src="Bike1.jpeg" alt="Bike 1"></a>
+            <a href="Bike2.jpeg"><img src="Bike2.jpeg" alt="Bike 2"></a>
+            <a href="Bike3.jpeg"><img src="1369926.jpg" alt="Bike 3"></a>
+            <a href="Bike4.jpeg"><img src="Bike4.jpeg" alt="Bike 4"></a>
+        </div>
+        <h1 style="color:white">Car</h1>
+        <div class="gallery">
+            <a href="Car1.jpeg"><img src="Car1.jpeg" alt="Car 1"></a>
+            <a href="Car2.jpeg"><img src="Car2.jpeg" alt="Car 2"></a>
+            <a href="Car3.jpeg"><img src="Car3.jpeg" alt="Car 3"></a>
+            <a href="Car4.jpeg"><img src="Car4.jpeg" alt="Car 4"></a>
+</body>
+</html>
