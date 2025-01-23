@@ -1,0 +1,60 @@
+
+/* Container styling */
+.video-container {
+    text-align: center;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Video styling */
+  .video-container video {
+    width: 70%;
+    border: 5px solid #4caf50;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .video-container video:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Button container styling */
+  .button-container {
+    margin-top: 15px;
+  }
+  
+  /* Button styling */
+  .button-container button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .button-container button:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+  }
+  
+  .button-container button:active {
+    background-color: #3e8e41;
+    transform: scale(1);
+  }
+  
+  /* Add responsiveness */
+  @media (max-width: 768px) {
+    .video-container video {
+      width: 90%;
+    }
+  
+    .button-container button {
+      padding: 8px 15px;
+      font-size: 14px;
+    }
+  }
