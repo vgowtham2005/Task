@@ -1,0 +1,97 @@
+/* Home Page Styling */
+.home-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .search-box {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  /* Food Grid Styling */
+  .food-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+  }
+  
+  /* Food Card Styling */
+  .food-card {
+    width: 300px;
+    height: 250px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    background-color: #f9f9f9;
+    color:#333;
+    overflow: scroll;
+  }
+  
+  .food-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .food-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .food-name {
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+  
+  .food-price {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  .compare-btn {
+    padding: 8px 16px;
+    background-color: #00ff5e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .compare-btn:hover {
+    background-color: #0056b3;
+  }
+  /* Aesthetic Search Bar */
+.search-box {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    outline: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .search-box:focus {
+    border-color: #007bff;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.4);
+  }
+  
+  .search-box::placeholder {
+    color: #999;
+    font-style: italic;
+  }
+  

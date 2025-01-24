@@ -1,0 +1,54 @@
+/* General App Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  padding: 0;
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: #007bff;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+.navbar button:hover {
+  background-color: #0056b3;
+  border-radius: 5px;
+}
+
+.navbar .active {
+  border-bottom: 3px solid #ffcc00;
+}
+
+/* Button Styling */
+button {
+  font-family: Arial, sans-serif;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
